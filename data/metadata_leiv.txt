@@ -1,0 +1,284 @@
+                                                 Nome  \
+0                            31. Data de investigação   
+1           32. Ocupação/ Ramo de Atividade Econômica   
+2                         33. Sinais e Sintomas Febre   
+3                      33. Sinais e Sintomas Fraqueza   
+4                         33. Sinais e Sintomas Edema   
+5                 33. Sinais e Sintomas Emagrecimento   
+6           33. Sinais e Sintomas Tosse e/ou diarréia   
+7                       33. Sinais e Sintomas Palidez   
+8               33. Sinais e Sintomas Aumento do Baço   
+9             33. Sinais e Sintomas Quadro infeccioso   
+10       33. Sinais e Sintomas Fenômenos hemorrágicos   
+11            33. Sinais e Sintomas Aumento do Fígado   
+12                    33. Sinais e Sintomas Icterícia   
+13                       33. Sinais e Sintomas Outros   
+14       33. Sinais e Sintomas Outros (especificação)   
+15                                34. Co-infecção HIV   
+16                     35. Diagnóstico Parasitológico   
+17                    36. Diagnóstico Imunológico IFI   
+18                  36. Diagnóstico Imunológico Outro   
+19                                37. Tipo de entrada   
+20                   38. Data do início do tratamento   
+21                     39. Droga Inicial Administrada   
+22                                           40. Peso   
+23               41. Dose Prescrita em mg/kg/dia Sb+5   
+24                 42. Nº total de ampolas prescritas   
+25  43. Outra droga utilizada, na falência do trat...   
+26                            44. Classificação final   
+27                        45. Critério de confirmação   
+28  46. O caso é autóctone do município de residên...   
+29         47. Local provável da fonte de infecção UF   
+30       48. Local provável da fonte de infecção País   
+31  49. Local provável da fonte de infecção Município   
+32   50. Local provável da fonte de infecção Distrito   
+33     51. Local provável da fonte de infecção Bairro   
+34                 52. Doença relacionada ao trabalho   
+35                               53. Evolução do caso   
+36                                  54. Data do óbito   
+37                           55. Data do encerramento   
+38                  Informações complementares Data 1   
+39       Informações complementares Local/Município 1   
+40                    Informações complementares UF 1   
+41                  Informações complementares País 1   
+42    Informações complementares Meio de transporte 1   
+43                  Informações complementares Data 2   
+44       Informações complementares Local/Município 2   
+45                    Informações complementares UF 2   
+46                  Informações complementares País 2   
+47    Informações complementares Meio de transporte 2   
+48                  Informações complementares Data 3   
+49       Informações complementares Local/Município 3   
+50                    Informações complementares UF 3   
+51                  Informações complementares País 3   
+52    Informações complementares Meio de transporte 3   
+53           Informações complementares e observações   
+54                                                NaN   
+
+                                   Campo                      Tipo  \
+0                        dt_investigacao                      date   
+1                        co_cbo_ocupacao               varchar2(6)   
+2                        st_sinais_febre               varchar2(1)   
+3                     st_sinais_fraqueza               varchar2(1)   
+4                        st_sinais_edema               varchar2(1)   
+5                st_sinais_emagrecimento               varchar2(1)   
+6                        st_sinais_tosse               varchar2(1)   
+7                      st_sinais_palidez               varchar2(1)   
+8                 st_sinais_aumento_baco               varchar2(1)   
+9                   st_sinais_infeccioso               varchar2(1)   
+10                 st_sinais_hemorragico               varchar2(1)   
+11                      st_sinais_figado               varchar2(1)   
+12                   st_sinais_ictericia               varchar2(1)   
+13                       st_sinais_outro               varchar2(1)   
+14                ds_sinal_sintoma_outro              varchar2(30)   
+15                       st_infeccao_hiv               varchar2(1)   
+16         st_diagnostico_parasitologico               varchar2(1)   
+17            st_diagnostico_imunologico               varchar2(1)   
+18                  st_diagnostico_outro               varchar2(1)   
+19                       tp_tipo_entrada               varchar2(1)   
+20                  dt_inicio_tratamento                      date   
+21                      tp_droga_inicial               varchar2(1)   
+22                               nu_peso                 number(3)   
+23                     tp_dose_prescrita               varchar2(1)   
+24              nu_total_ampola_pescrita                 number(3)   
+25                    tp_droga_utilizada               varchar2(1)   
+26                tp_classificacao_final               varchar2(2)   
+27               tp_criterio_confirmacao               varchar2(2)   
+28               tp_autoctone_residencia               varchar2(1)   
+29                        co_uf_infeccao               varchar2(2)   
+30                      co_pais_infeccao                varchar(4)   
+31                 co_municipio_infeccao               varchar2(6)   
+32                  co_distrito_infeccao               varchar2(9)   
+33  co_bairro_infeccaono_bairro_infeccao  varchar(8)\nvarchar2(60)   
+34                    st_doenca_trabalho               varchar2(1)   
+35                      tp_evolucao_caso               varchar2(1)   
+36                              dt_obito                      date   
+37                       dt_encerramento                      date   
+38                          dt_desloca_1                      date   
+39          ds_desloca_local_municipio_1              varchar2(60)   
+40                       co_uf_desloca_1               varchar2(2)   
+41                     co_pais_desloca_1                 number(3)   
+42                  ds_meio_transporte_1              varchar2(30)   
+43                          dt_desloca_2                      date   
+44          ds_desloca_local_municipio_2              varchar2(60)   
+45                       co_uf_desloca_2               varchar2(2)   
+46                     co_pais_desloca_2                 number(3)   
+47                  ds_meio_transporte_2              varchar2(30)   
+48                          dt_desloca_3                      date   
+49          ds_desloca_local_municipio_3              varchar2(60)   
+50                       co_uf_desloca_3               varchar2(2)   
+51                     co_pais_desloca_3                 number(3)   
+52                  ds_meio_transporte_3              varchar2(30)   
+53                         ds_observacao             varchar2(255)   
+54                                   NaN                       NaN   
+
+                                           Categorias  \
+0                                                 NaN   
+1                                                 NaN   
+2                         1- Sim\n2- Não\n9 -Ignorado   
+3                            1-Sim\n2 Não\n9 Ignorado   
+4                         1- Sim\n2- Não\n9- Ignorado   
+5                          1- Sim\n2-Não\n9- Ignorado   
+6                          1- Sim\n2- Não\n9-Ignorado   
+7                         1- Sim\n2- Não\n9- Ignorado   
+8                       1- Sim\n2 - Não\n9 - Ignorado   
+9                           1-Sim\n2-Não\n9- Ignorado   
+10                        1- Sim\n2 -Não\n9 -Ignorado   
+11                           1-Sim\n2-Não\n9-Ignorado   
+12                          1-Sim\n2-Não\n9 -Ignorado   
+13                           1-Sim\n2-Não\n9-Ignorado   
+14                                                NaN   
+15                           1-Sim\n2-Não\n9-Ignorado   
+16         1. Positivo\n2. Negativo\n3. Não realizado   
+17         1. Positivo\n2. Negativo\n3. Não realizado   
+18         1. Positivo\n2. Negativo\n3. Não realizado   
+19  1. Caso novo\n2. Recidiva\n3. Transferência\n9...   
+20                                                NaN   
+21  1. Antimonial\nPentavalente\n2. anfotericina b...   
+22                                                NaN   
+23  1. Maior ou igual\na 10 e menor\nque 15\n2. Ma...   
+24                                                NaN   
+25  1 – Anfotericina B\n2 – Anfotericina B\nliposs...   
+26                       1. Confirmado\n2. Descartado   
+27                                                NaN   
+28                      1-sim\n2-não\n3-Indeterminado   
+29                                                NaN   
+30                                                NaN   
+31                                                NaN   
+32                                                NaN   
+33                                                NaN   
+34                        1. Sim\n2. Não\n9. Ignorado   
+35  1. Cura\n2. Abandono\n3. Óbito por LV\n4. Óbit...   
+36                                                NaN   
+37                                                NaN   
+38                                                NaN   
+39                                                NaN   
+40                                                NaN   
+41                                                NaN   
+42                                                NaN   
+43                                                NaN   
+44                                                NaN   
+45                                                NaN   
+46                                                NaN   
+47                                                NaN   
+48                                                NaN   
+49                                                NaN   
+50                                                NaN   
+51                                                NaN   
+52                                                NaN   
+53                                                NaN   
+54                                                NaN   
+
+                                            Descrição  \
+0   Data em que ocorreu a\ninvestigação – informar...   
+1   Informar a atividade\nexercida pelo paciente\n...   
+2             Informar se o paciente\napresenta febre   
+3          Informar se o paciente\napresenta fraqueza   
+4             Informar se o paciente\napresenta edema   
+5    Informar se o paciente\napresenta\nemagrecimento   
+6   Informar se o paciente\napresenta tosse e/ou\n...   
+7           Informar se o paciente\napresenta palidez   
+8   Informar se o paciente\napresenta aumento do\n...   
+9   Informar se o paciente\napresenta quadro\ninfe...   
+10  Informar se o paciente\napresenta fenômenos\nh...   
+11  Informar se o paciente\napresenta aumento do\n...   
+12        Informar se o paciente\napresenta icterícia   
+13  Informar se o paciente\napresenta outros sinai...   
+14  Especificar outros sinais\ne sintomas que o\np...   
+15  Informar se o paciente\napresenta infecções\ni...   
+16  Informar o resultado do\ndiagnóstico\nparasito...   
+17  Informar o resultado do\ndiagnóstico Imunológi...   
+18  Informar o resultado do\ndiagnóstico imunológi...   
+19                                                NaN   
+20           Informar a data do início\ndo tratamento   
+21  Informar o medicamento\nprescrito para o\ntrat...   
+22                 Informar o peso do\npaciente em Kg   
+23  Informar a dose prescrita\npara o tratamento d...   
+24  Informar o número total\nde ampolas prescritas...   
+25  Informar qual droga foi\nutilizada na falência...   
+26                Identificar a classificação\nfinal.   
+27                Informar o critério de\nconfirmação   
+28  Informar a unidade\nfederada do local\nprováve...   
+29  Preencher se o caso\nfoi infectado em outro\npaís   
+30  Informar o município\ndo local provável da\nfo...   
+31  Informar o Distrito do\nlocal provável da font...   
+32  Identificar o Bairro do\nlocal provável da fon...   
+33  Informar se a doença\nestá relacionada ao\namb...   
+34                       Informar a evolução\ndo caso   
+35                          Informar a data do\nóbito   
+36           Informar a data do\nencerramento do caso   
+37  Informações\ncomplementares e\nobservações\nDe...   
+38  Informações\ncomplementares e\nobservações\nDe...   
+39  Informações\ncomplementares e\nobservações\nDe...   
+40  Informações\ncomplementares e\nobservações\nDe...   
+41  Informações\ncomplementares e\nobservações\nDe...   
+42  Informações\ncomplementares e\nobservações\nDe...   
+43  Informações\ncomplementares e\nobservações\nDe...   
+44  Informações\ncomplementares e\nobservações\nDe...   
+45  Informações\ncomplementares e\nobservações\nDe...   
+46  Informações\ncomplementares e\nobservações\nDe...   
+47  Informações\ncomplementares e\nobservações\nDe...   
+48  Informações\ncomplementares e\nobservações\nDe...   
+49  Informações\ncomplementares e\nobservações\nDe...   
+50  Informações\ncomplementares e\nobservações\nDe...   
+51  Informações\ncomplementares e\nobservações\nDe...   
+52  Informações\ncomplementares e\nobservações\nAn...   
+53                                                NaN   
+54                                                NaN   
+
+                                      Características                  DBF  
+0   Campo obrigatório\nData da investigação > ou =...            DT_INVEST  
+1                                                 NaN           ID_OCUPA_N  
+2                                   Campo obrigatório                FEBRE  
+3                                   Campo obrigatório             FRAQUEZA  
+4                                   Campo obrigatório                EDEMA  
+5                                   Campo obrigatório               EMAGRA  
+6                                   Campo obrigatório                TOSSE  
+7                                   Campo obrigatório              PALIDEZ  
+8                                   Campo obrigatório                 BACO  
+9                                   Campo obrigatório           INFECCIOSO  
+10                                  Campo obrigatório           FEN_HEMORR  
+11                                  Campo obrigatório               FIGADO  
+12                                  Campo obrigatório            ICTERICIA  
+13                                  Campo obrigatório               OUTROS  
+14  Campo essencial se campo\nSinais e Sintomas(Ou...           OUTROS_ESP  
+15                                  Campo obrigatório                  HIV  
+16  Campo obrigatório\nSe campo Diagnóstico\nparas...           DIAG_PAR_N  
+17  Campo obrigatório\nSe campo Diagnóstico\nImuno...                  IFI  
+18  Campo obrigatório\nSe campo Diagnóstico\nImuno...                OUTRO  
+19                                  Campo obrigatório              ENTRADA  
+20  Campo essencial\nData deve ser >= a data da\nn...           TRATAMENTO  
+21  Campo essencial\nSe = 1 (Antimonial pentavalen...                DROGA  
+22                                                NaN                 PESO  
+23  Campo essencial\nHabilitado se campo 39 (Droga...                 DOSE  
+24                                                NaN              AMPOLAS  
+25                                                NaN             FALENCIA  
+26  Campo obrigatório se o campo\n55 (Data de ence...           CLASSI_FIN  
+27  Campo obrigatório se o campo\n44 (Classificaçã...             CRITERIO  
+28  CAMPO\nOBRIGATÓRIO se\ncampo classificação\nfi...            TPAUTOCTO  
+29  Campo obrigatório se\npaís de infecção= Brasil...              COUFINF  
+30  Campo obrigatório e\nse campo classificação\nf...            COPAISINF  
+31  Campo obrigatório se\npaís de infecção =\nBras...             COMUNINF  
+32  Campo Essencial país\nde infecção = Brasil e o...             CODISINF  
+33  Campo Essencial país\nde infecção = Brasil e o...  CO_BAINFC\nNOBAIINF  
+34  Campo habilitado se\nclassificação final=1 ou\...           DOENCA_TRA  
+35  Campo essencial\nSe campo = 3 ou 4,\npular par...             EVOLUCAO  
+36  Campo Obrigatório se\ncampo Evolução do\nCaso ...             DT_OBITO  
+37  Campo Obrigatório se\ncampo Classificação\nfin...           DT_ENCERRA  
+38                                                NaN            DT_DESLC1  
+39                                                NaN             DS_MUN_1  
+40                                                NaN              CO_UF_1  
+41                                                NaN            CO_PAIS_1  
+42                                                NaN           DS_TRANS_1  
+43                                                NaN            DT_DESLC2  
+44                                                NaN             DS_MUN_2  
+45                                                NaN              CO_UF_2  
+46                                                NaN            CO_PAIS_2  
+47                                                NaN           DS_TRANS_2  
+48                                                NaN            DT_DESLC3  
+49                                                NaN             DS_MUN_3  
+50                                                NaN              CO_UF_3  
+51                                                NaN            CO_PAIS_3  
+52                                                NaN           DS_TRANS_3  
+53                                                NaN               DS_OBS  
+54                                                NaN                  NaN  
